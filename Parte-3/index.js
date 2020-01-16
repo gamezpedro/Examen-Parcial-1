@@ -1,9 +1,9 @@
-submit = $('submit');
-crowdname = document.getElementById("name").
+let submit = $('.submit')
+let crowdname = document.getElementById("name").value;
 
-function SubmitListener(){
+function submitListener(){
     $(submit).on("click",function(e){
-
+        console.log(crowdname);
     });
 }
 

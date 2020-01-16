@@ -1,20 +1,31 @@
 .main{
-    width: 100%;
+    width: 98%;
     height: 300px;
     background: lightgoldenrodyellow;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    align-items: center;
   }
   
   .container{
-    width: 400px;
+    width: 100%;
     height: 250px;
     background: lightpink;
+    display: flex;
+    align-content: center;
   }
-  
+
+  .topRow,.bottomRow{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .box{
     width: 50px;
     height: 50px;
-    background: black;
+    background: rgb(113, 146, 177);
     margin: 50px;
+    align-items: center;
   }
   
   .topRow {
@@ -24,4 +35,30 @@
   .bottomRow {
     height: 50%;
     
+  }
+
+  @media(min-width:601px) and (max-width:900px){
+    .container{
+      margin: 10px;
+      margin-left: 20%;
+      margin-right: 20%;
+      width: 60%;
+    }
+    .box{
+      background-color: #ffffff;
+    }
+  }
+
+  @media(min-width:901px){
+    .container{
+      margin: 10px;
+      margin-left: 30%;
+      margin-right: 30%;
+      width: 40%;
+      background-color: #51d8fa;
+    }
+    .box{
+      background-color: #ffffff;
+    }
+
   }
